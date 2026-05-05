@@ -1,0 +1,10 @@
+<h2>Introducir usuario</h2>
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Guardar</button>
+</form>
+
+<a href="/lista/">Ver usuarios</a><br>
+<a href="/excel/">Exportar a Excel</a>

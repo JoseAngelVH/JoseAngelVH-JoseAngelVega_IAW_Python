@@ -1,0 +1,21 @@
+<h2>Lista de usuarios</h2>
+
+<table border="1">
+<tr>
+    <th>Nombre</th>
+    <th>Kilómetros</th>
+</tr>
+
+{% for u in usuarios %}
+<tr>
+    <td>{{ u.nombre }}</td>
+    <td>
+        {{ u.km1 }}, {{ u.km2 }}, {{ u.km3 }}, {{ u.km4 }},
+        {{ u.km5 }}, {{ u.km6 }}, {{ u.km7 }}, {{ u.km8 }},
+        {{ u.km9 }}, {{ u.km10 }}
+    </td>
+</tr>
+{% endfor %}
+</table>
+
+<a href="/">Volver</a>
