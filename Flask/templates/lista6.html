@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de alumnos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>Lista de alumnos</h1>
+
+    <ul>
+        {% for alumno in alumnos %}
+            <li>{{ alumno[0] }} - Nota: {{ alumno[1] }}</li>
+        {% endfor %}
+    </ul>
+
+    <div style="text-align:center;">
+        <a href="/">Volver</a>
+    </div>
+
+</body>
+</html>

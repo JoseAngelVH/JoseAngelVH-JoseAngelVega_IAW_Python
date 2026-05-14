@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registro de alumnos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+
+    <h1>Registro de alumnos</h1>
+
+    <form action="/guardar">
+
+        <label>Nombre:</label><br>
+        <input type="text" name="nombre">
+
+        <label>Nota:</label><br>
+        <input type="number" name="nota">
+
+        <button type="submit">Guardar</button>
+
+    </form>
+
+</body>
+</html>

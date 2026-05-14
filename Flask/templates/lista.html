@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de alumnos</title>
+</head>
+<body>
+
+    <h1>Lista de alumnos</h1>
+
+    <ul>
+        {% for alumno in alumnos %}
+            <li>
+                {{ alumno.nombre }} - Nota: {{ alumno.nota }}
+            </li>
+        {% endfor %}
+    </ul>
+
+    <a href="/">Volver</a>
+
+</body>
+</html>
